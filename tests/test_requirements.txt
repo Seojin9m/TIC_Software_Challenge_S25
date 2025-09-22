@@ -1,0 +1,17 @@
+# Test requirements for Logging module unit tests
+# These are the minimal requirements needed to run the tests
+
+# Core testing framework (usually included with Python)
+# unittest is part of the standard library
+
+# The tests use mocking extensively to avoid ROS2 dependencies
+# unittest.mock is also part of the standard library since Python 3.3
+
+# Note: The actual Logging.py module has these dependencies:
+# - rosbag2_py (ROS2 package)
+# - rosidl_runtime_py (ROS2 package) 
+# - rclpy (ROS2 package)
+# - sensor_msgs (ROS2 package)
+# 
+# However, these are mocked in the tests so they don't need to be installed
+# for testing purposes.
